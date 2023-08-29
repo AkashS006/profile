@@ -3,41 +3,24 @@
 <head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+body{
+  align-content: center;
   background-image: url("index.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  box-sizing: border-box;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0);
+  max-width: 300px;
+  margin-left: 110px ;
+  float: left;
   text-align: center;
   font-family: arial;
-  background-color: white;
-  border-radius: 10px;
-  overflow: hidden;
-  margin: 20px;
-  padding: 20px;
-  box-sizing: border-box;
 }
-
-h2 {
+h2{
   font-size: 35px;
   text-transform: uppercase;
+  margin-left: 180px;
 }
 
 .title {
@@ -45,23 +28,17 @@ h2 {
   font-size: 18px;
 }
 
-.button-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
-
-.button {
+button {
   border: none;
   outline: 0;
+  display: inline-block;
   padding: 8px;
   color: white;
   background-color: #000;
   text-align: center;
   cursor: pointer;
+  width: 100%;
   font-size: 18px;
-  margin: 10px;
 }
 
 a {
@@ -70,53 +47,45 @@ a {
   color: black;
 }
 
-.icon {
-  margin-left: 15px;
-}
-
-.button:hover, a:hover {
+button:hover, a:hover {
   opacity: 0.7;
 }
-
-button:active, a:active {
+button:active, a:active{
   background-color: black;
-}
-
-@media (max-width: 768px) {
-  .card {
-    transform: scale(1.5); /* Increased scaling for mobile view */
-    max-width: 95%; /* Adjusted max width */
-    overflow: hidden; /* Hide overflow on mobile view */
-  }
-  .button-container {
-    margin-top: 10px; /* Adjusted margin top */
-  }
 }
 </style>
 </head>
 <body>
 
-<div class="container">
-  <h2>Profile</h2>
-  <div class="card">
-    <img src="profile.jpg" alt="John" style="width:100%">
-    <h1>AKASH S</h1>
-    <p class="title">EEE, STUDENT</p>
-    <p>DR.MAHALINGAM COLLEGE, Pollachi</p>
-    <div class="button-container">
-      <a href="https://twitter.com/Akash_20bee006" class="icon"><i class="fa fa-twitter"></i></a>
-      <a href="https://www.linkedin.com/in/akash-s-906b41253" class="icon"><i class="fa fa-linkedin"></i></a>
-      <a href="https://github.com/AkashS006" class="icon"><i class="fa fa-github"></i></a>
-      <a href="https://www.facebook.com/profile.php?id=100094190330550" class="icon"><i class="fa fa-facebook"></i></a>
-      <a href="#" class="icon"><i class="fa fa-gmail"></i></a>
-    </div>
-    <div class="button-container">
-      <a href="about.html" class="button">About Me</a>
-      <a href="blog.html" class="button">My Blog</a>
-      <a href="project.html" class="button">Projects</a>
-      <a href="contact.html" class="button">Contact</a>
-    </div>
+<h2 style="text-align:left;"><b>Profile<b></h2>
+
+<div class="card">
+  <img src="profile.jpg" alt="John" style="width:100%">
+  <h1>AKASH S</h1>
+  <p class="title">EEE, STUDENT</p>
+  <p>DR.MAHALINGAM COLLEGE, Pollachi</p>
+  <div style="margin: 24px 0;">
+     <a href="https://twitter.com/Akash_20bee006"><i style="margin-left: 15px;" class="fa fa-twitter"></i></a>  
+    <a href="https://www.linkedin.com/in/akash-s-906b41253"><i style= "margin-left: 15px;" class="fa fa-linkedin"></i></a>
+     <a href="https://github.com/AkashS006"><i style= "margin-left: 15px;"class="fa fa-github"></i></a>  
+    <a href="https://www.facebook.com/profile.php?id=100094190330550"><i style= "margin-left:  15px;"class="fa fa-facebook"></i></a> 
+    <a href="#"><i style= "margin-left:  15px;"class="fa fa-gmail"></i></a> 
   </div>
+  <a href="about.html">
+  <p><button>About Me</button></p>
+  </a>
+
+  <a href="blog.html">
+  <p><button>My Blog</button></p>
+  </a>
+
+  <a href="project.html">
+  <p><button>Projects</button></p>
+  </a>
+
+  <a href="contact.html">
+  <p><button>Contact</button></p>
+  </a>
 </div>
 
 </body>
