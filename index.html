@@ -86,12 +86,13 @@ button:active, a:active {
   background-color: black;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
   .card {
-    float: left;
-    width: calc(50% - 40px);
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 10px;
+    transform: scale(1.2);
   }
 }
 </style>
