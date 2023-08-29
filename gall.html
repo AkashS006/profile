@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+  height: 300px;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<h1><center>IMAGE GALLERY</center></h1>
+
+<p>Welcome to my Gallery Page!
+
+Explore a captivating collection of visual delights that showcase our passion for creativity and artistic expression. From stunning photography capturing breathtaking landscapes to captivating artwork that evokes emotions, our gallery offers a diverse range of captivating pieces. Immerse yourself in the beauty and inspiration found within each carefully curated image. Get ready to embark on a visual journey that will leave you inspired and captivated. Enjoy the enchanting world of art and photography in our gallery.</p>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_forest.jpg">
+      <img src="r1.jpg" alt="Forest" width="600" height="600">
+    </a>
+    <div class="desc">Certificate for completion of introduction to computers training.</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_lights.jpg">
+      <img src="r0.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Certificate of completing a C language for beginers.</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="nptel.jpeg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">NPTEL certificate in programming data structures and algorithms using python.</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="r2.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">NPTEL certificate in programming data structures and algorithms using python.</div>
+  </div>
+</div>
+
+</body>
+</html>
+
+

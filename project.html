@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: black;
+  background-color: grey;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: black;
+  color: white;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+
+.button1 {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: black;
+  background-color: #fff;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button1:hover {
+  background-color: #000;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>Projects</h1>
+  <a href="gall.html"><center><p><button class="button1" style="width:150px;"><b>VIEW GALLERY<b></button></p></center></a>
+  <p>Here I listed my projects click the button t see all sorce code and details of project.</p>
+  <p>Resize the browser window to see that this page is responsive by the way.</p>
+</div>
+
+<h2 style="text-align:center">My projects</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="p3.jpg" alt="Jane" style="width:100%; height: 312px;">
+      <div class="container">
+        <h2>Third Eye</h2>
+        <p class="title">Door Monitoring</p>
+        <p>Introducing "Third Eye": A revolutionary door monitoring system powered by ES-32 and a PIR sensor. With Arduino IDE and Proteus software, this prototype model provides enhanced home security and convenience. It notifies owners via Telegram when someone enters the door and allows easy control through a mobile phone. Open, close, monitor, and capture pictures effortlessly.</p>
+      <a href="https://technoengineerearth.blogspot.com/2022/10/mini-project-1.html">
+        <p><button class="button">LEARN MORE</button></p></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="p2.jpg" alt="Mike" style="width:100%; height: 312px;">
+      <div class="container">
+        <h2>Computer Vision Classification</h2>
+        <p class="title">Rice Classification</p>
+        <p>The Computer Vision Classification project is a prototype model created using Raspberry Pi and a camera module. It utilizes Python's IDLE and the OpenCV software. The system is designed to classify different types of rice based on visual analysis. When a sample of rice is placed in front of the camera, the system employs computer vision algorithms to identify and announce its specific variety...</p>
+        <a href="https://technoengineerearth.blogspot.com/2023/07/innovative-project.html">
+        <p><button class="button">LEARN MORE</button></p></a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="p1.jpg" alt="John" style="width:100%; height:312px">
+      <div class="container">
+        <h2>Home Automation</h2>
+        <p class="title">Embedded IOT</p>
+        <p>Introducing Home Automation: Our prototype model, utilizing a microprocessor (ESP-32) and a PIR sensor, is revolutionizing the way we interact with our homes. With the power of MPLAB and Proteus software, control all aspects of your home - from fans, lights, TVs, to AC - directly from your smartphone, no matter where you are. Experience a connected and intelligent living environment like never before.</p>
+        <a href="https://technoengineerearth.blogspot.com/2023/07/hobby-project.html">
+        <p><button class="button">LEARN MORE</button></p></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

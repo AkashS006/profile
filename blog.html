@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: lightgrey;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+button{
+  cursor: pointer;
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>My Blog</h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>RESISTOR</h2>
+      <h5>"Resistors: Unveiling the Secrets of A Comprehensive Guide to Understanding and Harnessing the Power of These Essential Electronic Components", Jan 7, 2023</h5>
+     <a href="https://surviveinelectronicsworld.blogspot.com/2023/05/unveiling-secrets-of-resistors.html"><button><img src="res.jpg"style="height:150px;width:400px ;padding: 5px;"></button></a>
+      
+      
+      <p>    In the vast and intricate world of electronics, where complex devices and circuits come to life, there exists a seemingly unassuming yet indispensable component known as the resistor. While often overlooked, resistors play a fundamental role in countless electronic systems, serving as the unsung heroes that regulate and control the flow of electric current.</p>
+    </div>
+    <div class="card">
+      <h2>Third Eye</h2>
+      <h5>Door Monitoring, Mar 2, 2023</h5>
+      <a href="https://technoengineerearth.blogspot.com/2022/10/mini-project-1.html"><button><img src="p3.jpg" style="height : 150px;width: 400px;padding: 5px;"></button></a>
+      <p>Door Monitoring</p>
+        <p>Introducing "Third Eye": A revolutionary door monitoring system powered by ES-32 and a PIR sensor. With Arduino IDE and Proteus software, this prototype model provides enhanced home security and convenience. It notifies owners via Telegram when someone enters the door and allows easy control through a mobile phone. Open, close, monitor, and capture pictures effortlessly.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:100px;"><a href="https://technoengineerearth.blogspot.com/2023/07/about-me.html"><button><img src="about.jpg"style="height: 70px;width: 100px;margin-left: 5px;-left: 15px;padding-right: 5px;"></div></button></a>
+      <p>Click this button to know about me..</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+
+
+
+      <div class="div1"><a href="https://technoengineerearth.blogspot.com/2023/07/innovative-project.html"><button><img src="p2.jpg" style="height:60px ;width: 100px;"></button></a></div><br>
+
+
+      <div class="div2"><a href="https://technoengineerearth.blogspot.com/2023/07/hobby-project.html"><button><img src="p1.jpg"style="height:60px ;width: 100px;"></button></a></div><br>
+
+
+      <div class="div3"><a href="https://technoengineerearth.blogspot.com/2022/10/internship-experience.html"><button><img src="internship.jpg"style="height:60px ;width: 100px;"></button></a></div>
+
+
+
+
+
+
+    </div>
+    <div class="card">
+      <div class="mob">
+      <h3>Follow Me</h3>
+      <a href="https://www.blogger.com/blog/posts/5461477607818553386"><button><p><b>Click Here</b></p></button></a></div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .mob button{
+    border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: black;
+  background-color: grey;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  }
+  .mob button:hover{
+    color: white;
+    background-color: #000;
+  }
+</style>
+</body>
+</html>
