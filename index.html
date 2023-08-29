@@ -9,16 +9,18 @@ body {
   background-image: url("index.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
 }
 
 .container {
   max-width: 1200px;
+  margin: 0 auto;
   padding: 20px;
   box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
@@ -29,6 +31,10 @@ body {
   border-radius: 10px;
   overflow: hidden;
   margin: 20px auto;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 h2 {
@@ -46,6 +52,7 @@ h2 {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .button {
