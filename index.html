@@ -30,9 +30,7 @@ body {
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
-  margin: 50px 20px; /* Adjusted top and bottom margins */
-  width: 100%;
-  max-width: 600px;
+  margin: 20px;
   padding: 20px;
   box-sizing: border-box;
 }
@@ -40,8 +38,6 @@ body {
 h2 {
   font-size: 35px;
   text-transform: uppercase;
-  text-align: center;
-  margin-top: 10px; /* Move content up slightly */
 }
 
 .title {
@@ -51,7 +47,7 @@ h2 {
 
 .button-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   margin-top: 20px;
 }
@@ -64,9 +60,8 @@ h2 {
   background-color: #000;
   text-align: center;
   cursor: pointer;
-  width: 100%;
   font-size: 18px;
-  margin: 10px 0;
+  margin: 10px;
 }
 
 a {
@@ -88,12 +83,9 @@ button:active, a:active {
 }
 
 @media (max-width: 768px) {
-  .container {
-    padding: 10px;
-  }
   .card {
-    margin: 50px 10px; /* Adjusted top and bottom margins */
     transform: scale(1); /* Normal scaling */
+    max-width: 95%; /* Adjusted max width */
   }
 }
 </style>
@@ -101,7 +93,7 @@ button:active, a:active {
 <body>
 
 <div class="container">
-  <h1 style="font-size: 80px;">Profile</h1>
+  <h2>Profile</h2>
   <div class="card">
     <img src="profile.jpg" alt="John" style="width:100%">
     <h1>AKASH S</h1>
